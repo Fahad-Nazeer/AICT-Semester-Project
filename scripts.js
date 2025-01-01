@@ -79,3 +79,83 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('search-input');
+    const bookItems = document.querySelectorAll('.book-item');
+
+    searchInput.addEventListener('input', () => {
+        const filter = searchInput.value.toLowerCase();
+        bookItems.forEach(item => {
+            const author = item.getAttribute('data-author').toLowerCase();
+            const title = item.getAttribute('data-title').toLowerCase();
+            if (author.includes(filter) || title.includes(filter)) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('search-input');
+    const bookItems = document.querySelectorAll('.book-item');
+
+    searchInput.addEventListener('input', () => {
+        const filter = searchInput.value.toLowerCase();
+        bookItems.forEach(item => {
+            const author = item.getAttribute('data-author').toLowerCase();
+            const title = item.getAttribute('data-title').toLowerCase();
+            if (author.includes(filter) || title.includes(filter)) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('search-input');
+    const bookItems = document.querySelectorAll('.book-item');
+
+    searchInput.addEventListener('input', () => {
+        const filter = searchInput.value.toLowerCase();
+        bookItems.forEach(item => {
+            const author = item.getAttribute('data-author').toLowerCase();
+            const title = item.getAttribute('data-title').toLowerCase();
+            if (author.includes(filter) || title.includes(filter)) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+
+    // Handle login and signup form submissions for demonstration purposes
+    const loginForm = document.getElementById('login-form');
+    const signupForm = document.getElementById('signup-form');
+    const loginMessage = document.getElementById('login-message');
+    const signupMessage = document.getElementById('signup-message');
+
+    if (loginForm) {
+        loginForm.addEventListener('submit', event => {
+            event.preventDefault();
+            loginMessage.textContent = 'Login successful!'; // Add your login logic here
+            loginMessage.style.color = 'green';
+        });
+    }
+
+    if (signupForm) {
+        signupForm.addEventListener('submit', event => {
+            event.preventDefault();
+            const password = document.getElementById('new-password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            if (password === confirmPassword) {
+                signupMessage.textContent = 'Sign up successful!'; // Add your sign-up logic here
+                signupMessage.style.color = 'green';
+            } else {
+                signupMessage.textContent = 'Passwords do not match.';
+                signupMessage.style.color = 'red';
+            }
+        });
+    }
+});
