@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Book Haven</title>
+    <title>Books - Book Haven</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="logo.webp" alt="Book Haven Logo">
+                <img src="images/logo.webp" alt="Book Haven Logo">
                 <h1>Book Haven</h1>
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="Books.html">Books</a></li>
+                <li><a href="books.html">Books</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
@@ -26,24 +25,260 @@
     </header>
 
     <main>
-        <section class="contact-section">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+        <section class="search-bar">
+            <input type="text" id="search-input" placeholder="Search by author or book name...">
+        </section>
+
+        <section class="book-section">
+            <h2>Popular</h2>
+            <div class="books-grid">
+                <div class="book-item" data-author="J.K. Rowling" data-title="Harry Potter">
+                    <div class="image-placeholder">
+                        <img src="images/popular 1.jpeg" alt="Book 1">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: J.K. Rowling</h4>
+                            <p>The magical adventures of Harry Potter and his friends at Hogwarts.</p>
+                        </div>
+                    </div>
+                    <p>Harry Potter</p>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="book-item" data-author="Louisa May Alcott" data-title="Little Women">
+                    <div class="image-placeholder">
+                        <img src="images/popular2.webp" alt="Book 2">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Louisa May Alcott</h4>
+                            <p>The story of four sisters growing up during the Civil War.</p>
+                        </div>
+                    </div>
+                    <p>Little Women</p>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                <div class="book-item" data-author="Harper Lee" data-title="To Kill a Mockingbird">
+                    <div class="image-placeholder">
+                        <img src="images/popular3.webp" alt="Book 3">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Harper Lee</h4>
+                            <p>A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice.</p>
+                        </div>
+                    </div>
+                    <p>To Kill a Mockingbird</p>
                 </div>
-                <button type="submit">Submit</button>
-            </form>
-            <div id="form-message"></div>
+                <div class="book-item" data-author="Harper Lee" data-title="To Kill a Mockingbird 2">
+                    <div class="image-placeholder">
+                        <img src="images/popular 4.webp" alt="Book 4">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Harper Lee</h4>
+                            <p>The sequel to To Kill a Mockingbird, focusing on Scout Finch's return to Maycomb.</p>
+                        </div>
+                    </div>
+                    <p>To Kill a Mockingbird 2</p>
+                </div>
+                <div class="book-item" data-author="Enid Blyton" data-title="The Famous Five">
+                    <div class="image-placeholder">
+                        <img src="images/popular 5.jpeg" alt="Book 5">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Enid Blyton</h4>
+                            <p>The adventures of a group of young detectives.</p>
+                        </div>
+                    </div>
+                    <p>The Famous Five</p>
+                </div>
+                <div class="book-item" data-author="H.G. Wells" data-title="The Invisible Man">
+                    <div class="image-placeholder">
+                        <img src="images/popular 6.jpeg" alt="Book 6">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: H.G. Wells</h4>
+                            <p>The story of an invisible man who struggles with his newfound power.</p>
+                        </div>
+                    </div>
+                    <p>The Invisible Man</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="book-section">
+            <h2>Science</h2>
+            <div class="books-grid">
+                <div class="book-item" data-author="Steven Strogatz" data-title="Infinite Powers">
+                    <div class="image-placeholder">
+                        <img src="images/science 1.jpeg" alt="Science Book 1">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Steven Strogatz</h4>
+                            <p>An exploration of calculus and its impact on the modern world.</p>
+                        </div>
+                    </div>
+                    <p>Infinite Powers</p>
+                </div>
+                <div class="book-item" data-author="Stephen Hawking" data-title="A Brief History of Time">
+                    <div class="image-placeholder">
+                        <img src="images/science2.jpg" alt="Science Book 2">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Stephen Hawking</h4>
+                            <p>An exploration of the universe and its origins.</p>
+                        </div>
+                    </div>
+                    <p>A Brief History of Time</p>
+                </div>
+                <div class="book-item" data-author="Carl Sagan" data-title="COSMOS">
+                    <div class="image-placeholder">
+                        <img src="images/science3.jpeg" alt="Science Book 3">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Carl Sagan</h4>
+                            <p>An exploration of the cosmos and humanity's place within it.</p>
+                        </div>
+                    </div>
+                    <p>COSMOS</p>
+                </div>
+                <div class="book-item" data-author="Richard Dawkins" data-title="The Selfish Gene">
+                    <div class="image-placeholder">
+                        <img src="images/science4.jpg" alt="Science Book 4">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Richard Dawkins</h4>
+                            <p>An exploration of gene-centered evolution.</p>
+                        </div>
+                    </div>
+                    <p>The Selfish Gene</p>
+                </div>
+                <div class="book-item" data-author="Carl Sagan" data-title="The Demon-Haunted World">
+                    <div class="image-placeholder">
+                        <img src="images/science5.jpeg" alt="Science Book 5">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Carl Sagan</h4>
+                            <p>An exploration of science and its role in human understanding.</p>
+                        </div>
+                    </div>
+                    <p>The Demon-Haunted World</p>
+                </div>
+                <div class="book-item" data-author="James Nestor" data-title="Breath">
+                    <div class="image-placeholder">
+                        <img src="images/science6.jpeg" alt="Science Book 6">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: James Nestor</h4>
+                            <p>An exploration of the science of breathing.</p>
+                        </div>
+                    </div>
+                    <p>Breath</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="book-section">
+            <h2>History</h2>
+            <div class="books-grid">
+                <div class="book-item" data-author="Jared Diamond" data-title="Guns, Germs And Steel">
+                    <div class="image-placeholder">
+                        <img src="images/history 1.jpeg" alt="History Book 1">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Jared Diamond</h4>
+                            <p>An exploration of the factors that have shaped human history.</p>
+                        </div>
+                    </div>
+                    <p>Guns, Germs And Steel</p>
+                </div>
+                <div class="book-item" data-author="Peter Frankopan" data-title="The Silk Road">
+                    <div class="image-placeholder">
+                        <img src="images/history2.jpg" alt="History Book 2">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Peter Frankopan</h4>
+                            <p>An exploration of the history of the Silk Road.</p>
+                        </div>
+                    </div>
+                    <p>The Silk Road</p>
+                </div>
+                <div class="book-item" data-author="Ron Chernow" data-title="GRANT">
+                    <div class="image-placeholder">
+                        <img src="images/history3.jpeg" alt="History Book 3">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Ron Chernow</h4>
+                            <p>The biography of Ulysses S. Grant, one of America's greatest generals and presidents.</p>
+                        </div>
+                    </div>
+                    <p>GRANT</p>
+                </div>
+                <div class="book-item" data-author="Jack Weatherford" data-title="Genghis Khan">
+                    <div class="image-placeholder">
+                        <img src="images/history4.jpeg" alt="History Book 4">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Jack Weatherford</h4>
+                            <p>An exploration of the life and legacy of Genghis Khan.</p>
+                        </div>
+                    </div>
+                    <p>Genghis Khan</p>
+                </div>
+                <div class="book-item" data-author="Bipan Chandra" data-title="History Of Modern India">
+                    <div class="image-placeholder">
+                        <img src="images/history5.jpeg" alt="History Book 5">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Bipan Chandra</h4>
+                            <p>A comprehensive history of modern India.</p>
+                        </div>
+                    </div>
+                    <p>History Of Modern India</p>
+                </div>
+                <div class="book-item" data-author="K.K. Aziz" data-title="The Murder Of History">
+                    <div class="image-placeholder">
+                        <img src="images/history6.jpg" alt="History Book 6">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: K.K. Aziz</h4>
+                            <p>An analysis of the distortions in the history of Pakistan.</p>
+                        </div>
+                    </div>
+                    <p>The Murder Of History</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="book-section">
+            <h2>Owner's Favourite</h2>
+            <div class="books-grid">
+                <div class="book-item" data-author="Munshi Premchand" data-title="Godan">
+                    <div class="image-placeholder">
+                        <img src="images/godan.jpg" alt="Godan">
+                    </div>
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h4>Author: Munshi Premchand</h4>
+                            <p>Godan is a celebrated Hindi novel that depicts the socio-economic deprivation as well as the exploitation of the village peasantry in India.</p>
+                        </div>
+                    </div>
+                    <p>Godan</p>
+                </div>
+            </div>
         </section>
     </main>
 
